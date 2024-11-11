@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administración - Katicell</title>
+    <link rel="stylesheet" href="css/admin.css">
+    <script src="admin.js" defer></script>
+</head>
+<body>
+    <div class="admin-wrapper">
+        <aside class="sidebar">
+            <h2>Katicell Admin</h2>
+            <nav>
+                <ul>
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="#">Gestión de Productos</a></li>
+                    <li><a href="#">Gestión de Usuarios</a></li>
+                    <li><a href="#">Órdenes</a></li>
+                    <li><a href="#">Reportes</a></li>
+                </ul>
+            </nav>
+            <button class="logout-button">Cerrar sesión</button>
+        </aside>
+
+        <main class="main-content"> 
+            <header>
+                <h1>Bienvenido al área de administración</h1>
+            </header>
+            <section class="section">
+                <h2>Productos</h2>
+               
+                <button class="btn-primary" onclick="window.location.href='/agregar-prod'">Agregar Producto</button>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Nombre</th>
+                                <th>Precio</th>
+                                <th>Cantidad</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Celular Modelo A</td>
+                                <td>$200</td>
+                                <td>50</td>
+                                <td>
+                                    <button class="btn-edit">Editar</button>
+                                    <button class="btn-delete">Eliminar</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Celular Modelo B</td>
+                                <td>$300</td>
+                                <td>30</td>
+                                <td>
+                                    <button class="btn-edit">Editar</button>
+                                    <button class="btn-delete">Eliminar</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
+

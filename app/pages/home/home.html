@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>katicell tienda onlinne</title> 
+    <link rel="icon" type="image/jpg" href="images/katicell.jpg">
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <div class="container"> 
+        <div class="row"> 
+
+         
+            <div class="col-xs-12 col-s-12 col-m-2 col-l-2">
+                <img src="/img/logo.png" width="170" alt="logo de Katicell"> <!-- Logo de la tienda -->
+                <ul id="menu"> <!-- Menú de navegación -->
+                    <li><a href="#" class="active">Inicio</a></li> <!-- Enlace activo para la página de inicio -->
+                    <li><a href="#">Celulares</a></li>
+                    <li><a href="#">Accesorios</a></li>
+                    <li><a href="#">Ofertas</a></li>
+                </ul>
+            </div>
+
+            <!-- Columna principal de contenido -->
+            <div class="col-xs-12 col-s-12 col-m-7 col-l-7">
+                <h1 class="title-products">Bienvenidos a Katicell<br>
+                    <span class="welcome-phrase">Tu mejor opción en celulares y accesorios</span>
+                </h1> <!-- Título principal -->
+                <h2 class="subtitle-products">Más vendidos</h2> <!-- Subtítulo -->
+
+                <div class="col-xs-12"> <!-- Sección de búsqueda y ordenamiento -->
+                    <form class="search-form" action="#" method="get"> <!-- Formulario de búsqueda -->
+                        <label for="search-input" class="visually-hidden"></label>
+                        <input type="search" id="search-input" name="search" class="search-input" placeholder="Buscar artículo por nombre" aria-label="Buscar artículo por nombre">
+                    </form>
+                    
+                    <label for="sort-options" class="select-label"></label>
+                    <select id="sort-options" class="select-order" aria-label="Ordenar artículos"> <!-- Selector para ordenar artículos -->
+                        <option value="low-price">CATEGORIAS</option>
+                        <option value="low-price">Precio más bajo</option>
+                        <option value="high-price">Precio más alto</option>
+                        <option value="reviews">Por opiniones</option>
+                        <option value="discount">Por descuento</option>
+                    </select>
+                </div>
+                
+                <div class="row"> <!-- Sección de productos -->
+                    <a href="#" class="col-m-4 col-s-6 product-box"> 
+                        <img alt="producto1" src="/img/producto1.jpg" width="100%" />
+                        <div class="hidden offer">oferta</div> 
+                        <h3>celular xiaomi</h3>
+                        <strong class="price">$29.900</strong> 
+                        <button class="add-to-cart-btn" onclick="agregarAlCarrito(1, 'celular xiaomi', 29900, '/img/producto1.jpg')">Agregar al carrito</button>
+
+                        <a href="#" class="col-m-4 col-s-6 product-box"> 
+                            <img alt="producto1" src="/img/producto14.jpg" width="100%" />
+                            <div class="hidden offer">oferta</div> 
+                            <h3>celular xiaomi</h3>
+                            <strong class="price">$29.900</strong> 
+                            <button class="add-to-cart-btn" onclick="agregarAlCarrito(1, 'celular xiaomi', 29900, '/img/producto14.jpg')">Agregar al carrito</button>
+                        
+                        </a>
+
+                    <a href="#" class="col-m-4 col-s-6 product-box"> 
+                        <img alt="producto2" src="/img/producto18.jpg" width="100%" />
+                        <div class="hidden offer">oferta</div>
+                        <h3>adifonos inalambricos</h3>
+                        <strong class="price"><del>20.000</del>$29.900</strong>
+                        <button class="add-to-cart-btn" onclick="agregarAlCarrito(1, 'audifonos inalambricos', 29900, '/img/producto18.jpg')">Agregar al carrito</button>
+
+                    </a>
+
+                    <a href="#" class="col-m-4 col-s-6 product-box">
+                        <img alt="producto3" src="/img/producto3.jpg" width="100%" />
+                        <div class="hidden offer">oferta</div>
+                        <h3>celular xiaomi</h3>
+                        <strong class="price">$29.900</strong>
+                        <button class="add-to-cart-btn" onclick="agregarAlCarrito(1,'celular xiaomi', 29900)">agregar al carrito</button>
+                    </a>
+
+                    <a href="#" class="col-m-4 col-s-6 product-box">
+                        <img alt="producto4" src="/img/producto4.jpg" width="100%" />
+                        <div class="hidden offer">oferta</div>
+                        <h3>celular xiaomi</h3>
+                        <strong class="price">$29.900</strong>
+                        <button class="add-to-cart-btn" onclick="agregarAlCarrito(1, 'celular xiaomi', 29900, '/img/producto4.jpg')">Agregar al carrito</button>
+
+                    </a>
+
+                    <a href="#" class="col-m-4 col-s-6 product-box">
+                        <img alt="producto5" src="/img/producto5.jpg" width="100%" />
+                        <div class="hidden offer">oferta</div>
+                        <h3>celular xiaomi</h3>
+                        <strong class="price">$29.900</strong>
+                        <button class="add-to-cart-btn" onclick="agregarAlCarrito(1, 'celular xiaomi', 29900, '/img/producto5.jpg')">Agregar al carrito</button>
+
+                    </a>
+
+                    <a href="#" class="col-m-4 col-s-6 product-box">
+                        <img alt="producto6" src="/img/producto6.jpg" width="100%" />
+                        <div class="hidden offer">oferta</div>
+                        <h3>celular xiaomi</h3>
+                        <strong class="price">$29.900</strong>
+                        <button class="add-to-cart-btn" onclick="agregarAlCarrito(1, 'celular xiaomi', 29900, '/img/producto6.jpg')">Agregar al carrito</button>
+
+                    </a>
+
+                    <a href="#" class="col-m-4 col-s-6 product-box">
+                        <img alt="producto7" src="/img/producto7.jpg" width="100%" />
+                        <div class="hidden offer">oferta</div>
+                        <h3>celular xiaomi</h3>
+                        <strong class="price">$29.900</strong>
+                        <button class="add-to-cart-btn" onclick="agregarAlCarrito(1, 'celular xiaomi', 29900, '/img/producto7.jpg')">Agregar al carrito</button>
+
+                    </a>
+
+                    <a href="#" class="col-m-4 col-s-6 product-box">
+                        <img alt="producto8" src="/img/producto8.jpg" width="100%" />
+                        <div class="hidden offer">oferta</div>
+                        <h3>celular xiaomi</h3>
+                        <strong class="price">$29.900</strong>
+                        <button class="add-to-cart-btn" onclick="agregarAlCarrito(1, 'celular xiaomi', 29900, '/img/producto8.jpg')">Agregar al carrito</button>
+
+                    </a>
+
+                    <a href="#" class="col-m-4 col-s-6 product-box">
+                        <img alt="producto9" src="/img/producto9.jpg" width="100%" />
+                        <div class="hidden offer">oferta</div>
+                        <h3>celular xiaomi</h3>
+                        <strong class="price">$29.900</strong>
+                        <button class="add-to-cart-btn" onclick="agregarAlCarrito(1, 'celular xiaomi', 29900, '/img/producto9.jpg')">Agregar al carrito</button>
+
+                    </a>
+
+                    <a href="#" class="col-m-4 col-s-6 product-box">
+                        <img alt="producto10" src="/img/producto10.jpg" width="100%" />
+                        <div class="hidden offer">oferta</div>
+                        <h3>celular xiaomi</h3>
+                        <strong class="price">$29.900</strong>
+                        <button class="add-to-cart-btn" onclick="agregarAlCarrito(1, 'celular xiaomi', 29900, '/img/producto10.jpg')">Agregar al carrito</button>
+
+                    </a>
+
+                    <a href="#" class="col-m-4 col-s-6 product-box">
+                        <img alt="producto11" src="/img/producto11.jpg" width="100%" />
+                        <div class="hidden offer">oferta</div>
+                        <h3>celular xiaomi</h3>
+                        <strong class="price">$29.900</strong>
+                        <button class="add-to-cart-btn" onclick="agregarAlCarrito(1, 'celular xiaomi', 29900, '/img/producto11.jpg')">Agregar al carrito</button>
+                    </a>
+
+                </div>
+
+                <!-- Paginación -->
+                <ul class="pagination">
+                    <li><a href="#" class="active">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li>...</li>
+                    <li><a href="#">10</a></li>
+                </ul>
+            </div>
+
+            <!-- Columna lateral con iconos de carrito -->
+            <div class="col-m-12 col-l-3">
+                <aside class="row"> 
+                    <a href="#" class="col-m-3 col-l-12">
+                        <img alt="icono del carrito" src="img/my-account.svg" width="40"/>
+                        <p>Mi cuenta</p> <!-- Mensaje de artículos en el carrito -->
+                    </a>
+                    <a href="#" class="col-m-3 col-l-12">
+                        <img alt="icono del carrito" src="img/newsletter.svg" width="40"/>
+                        <p>suscribete</p>
+                    </a>
+                    <a href="#" class="col-m-3 col-l-12">
+                        <img alt="icono del carrito" src="img/favorites.svg" width="40"/>
+                        <p>Favoritos</p>
+                    </a>
+                    <a href="#" class="col-m-3 col-l-12 cart-icon-container" onclick="toggleCart(event)">
+                        <img alt="icono del carrito" src="img/shopping-cart.svg" width="40"/>
+                        <p id="cart-item-count">0 artículos en el carrito</p>
+                
+                        <!-- Contenedor desplegable del carrito -->
+                        <div class="cart-dropdown" id="cartDropdown" style="display: none;"> <!-- Cambia el display a none por defecto -->
+                            <h2>Tu Carrito</h2>
+                            <ul class="cart-items"></ul> <!-- Aquí se agregarán dinámicamente los productos -->
+                            
+                            <div class="cart-total">
+                                <p>Total: <span>$0.00</span></p> <!-- El total se actualizará dinámicamente -->
+                            </div>
+                            <button class="checkout-button" onclick="finalizarCompra()">Finalizar Compra</button>
+                        </div>
+                        
+            
+                    </a>
+            
+                </aside>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- Pie de página -->
+    <footer>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-s-3"> 
+                <img alt="icono" src="img/icon-secure.png" height="60"/>
+                <p><strong>Pago seguro</strong></p>
+                </div>
+
+                <div class="col-s-3"> 
+                    <img alt="icono" src="img/icon-shipping.png" height="60"/>
+                    <p><strong>Envios a todo el pais</strong></p>
+                </div>
+
+                <div class="col-s-3"> 
+                    <img alt="icono" src="img/icon-customer-service.png" height="60"/>
+                    <p><strong>Soporte</strong></p>
+                </div>
+
+                <div class="col-s-3"> 
+                    <img alt="icono" src="img/icon-refund.png" height="60"/>
+                    <p><strong>Enviios gratis a partir de 2.000.000</strong></p>
+                </div>
+           
+            </div>
+
+        </div>
+        
+        &copy; David Pacheco</footer>
+
+        <script src="carrito.js"></script>
+
+</body>
+</html>

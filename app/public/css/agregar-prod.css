@@ -1,0 +1,89 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e0f7fa; /* Color de fondo más atractivo */
+    color: #333;
+}
+
+/* Contenedor del formulario */
+.form-container {
+    width: 600px; /* Aumento del ancho */
+    padding: 60px; /* Aumento del padding */
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ff6f00;
+    font-size: 26px; /* Aumento del tamaño de la fuente */
+    font-weight: bold;
+}
+
+/* Estilos de los campos */
+.form-container label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #666;
+}
+
+.form-container input[type="text"],
+.form-container input[type="number"] {
+    width: 100%;
+    padding: 14px; /* Aumento del padding */
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px; /* Aumento del tamaño de la fuente */
+    transition: border-color 0.3s;
+}
+
+.form-container input[type="text"]:focus,
+.form-container input[type="number"]:focus {
+    border-color: #ff6f00;
+    outline: none;
+}
+
+/* Botón de envío */
+.form-container button {
+    width: 100%;
+    padding: 14px; /* Aumento del padding */
+    border: none;
+    border-radius: 8px;
+    background-color: #ff6f00;
+    color: #fff;
+    font-size: 18px; /* Aumento del tamaño de la fuente */
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form-container button:hover {
+    background-color: #e65c00;
+}
+
+/* Estilos de los iconos */
+.form-container i {
+    margin-right: 8px;
+}
+
+/* Estilos de mensaje de error */
+.error {
+    display: none;
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+}
